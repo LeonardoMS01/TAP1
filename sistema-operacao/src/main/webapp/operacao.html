@@ -1,0 +1,23 @@
+<html>
+    <head>
+            <meta charset="UTF-8"/>
+            <script>
+                 function somar(){
+                     var n1 =  (document.getElementById("N1").value);
+                     var n2 =  (document.getElementById("N2").value);
+                     var resul = parseInt (n1 + n2);
+                     var saida = document.getElementById("Resultado");
+
+                     saida.innerText = resul;
+                 }
+            </script>
+    </head>
+    <body>
+        <form>
+            <input type="number" id="N1" placeholder="Valor 1">
+            <input type="number" id="N2" placeholder="Valor 2">
+            <input type="button" value="Somar" onclick="somar()">
+            <label id="Resultado"> </label>
+        </form>
+    </body>
+</html>
